@@ -8,6 +8,169 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<script src="index.js"></script>
+    <nav>
+      <a href="" class="logo">
+        <img src="images/logo.png">
+      </a>
+
+      <ul>
+        <li class="nav-item">
+          <a href="" class="nav-link">Piese</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Accesorii</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Service</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Promoții</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Contact</a>
+        </li>
+       
+        <li class="nav-item nav-icon">
+          <svg stroke="111" id="Group_5_Copy_2" data-name="Group 5 Copy 2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+              <rect width="50" height="50" rx="4" stroke="none"/>
+              <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+            </g>
+            <g id="search" transform="translate(16 16)">
+              <circle id="Oval" cx="8" cy="8" r="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path id="Path" d="M4.35,4.35,0,0" transform="translate(13.65 13.65)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </svg>
+        </li>
+        <li class="nav-item nav-icon">
+          <svg id="Group_5" data-name="Group 5" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+              <rect width="50" height="50" rx="4" stroke="none"/>
+              <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+            </g>
+            <g id="user" transform="translate(17 16)">
+              <path id="Path" d="M16,6V4a4,4,0,0,0-4-4H4A4,4,0,0,0,0,4V6" transform="translate(0 12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <circle id="Oval" cx="4" cy="4" r="4" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </svg>
+        </li>
+        <li class="nav-item nav-icon">
+          <svg id="Group_5_Copy" data-name="Group 5 Copy" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+              <rect width="50" height="50" rx="4" stroke="none"/>
+              <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+            </g>
+            <g id="shopping-bag" transform="translate(16 15)">
+              <path id="Path" d="M3,0,0,4V18a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V4L15,0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path id="Path-2" data-name="Path" d="M0,.5H18" transform="translate(0 3.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path id="Path-3" data-name="Path" d="M8,0A4,4,0,0,1,4,4,4,4,0,0,1,0,0" transform="translate(5 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </g>
+          </svg>
+        </li>
+      </ul>
+
+      <!-- Bars -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+          <path id="Combined_Shape" data-name="Combined Shape" d="M15,24a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2ZM1,13a1,1,0,1,1,0-2H29a1,1,0,0,1,0,2ZM7,2A1,1,0,1,1,7,0H29a1,1,0,0,1,0,2Z" fill="#fff"/>
+        </svg>
+      </div>
+
+      <!-- Bars -->
+      <ul id="mobile-menu" class="mobile-menu">
+          <li class="nav-item">
+            <a href="" class="nav-link">Piese</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Accesorii</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Promoții</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+         
+          <ul class="mobile-menu-icon-list">
+            <li class="nav-item nav-icon">
+              <svg stroke="111" id="Group_5_Copy_2" data-name="Group 5 Copy 2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+                  <rect width="50" height="50" rx="4" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+                </g>
+                <g id="search" transform="translate(16 16)">
+                  <circle id="Oval" cx="8" cy="8" r="8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path" d="M4.35,4.35,0,0" transform="translate(13.65 13.65)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </li>
+            <li class="nav-item nav-icon">
+              <svg id="Group_5" data-name="Group 5" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+                  <rect width="50" height="50" rx="4" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+                </g>
+                <g id="user" transform="translate(17 16)">
+                  <path id="Path" d="M16,6V4a4,4,0,0,0-4-4H4A4,4,0,0,0,0,4V6" transform="translate(0 12)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <circle id="Oval" cx="4" cy="4" r="4" transform="translate(4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </li>
+            <li class="nav-item nav-icon">
+              <svg id="Group_5_Copy" data-name="Group 5 Copy" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <g id="Rectangle" fill="none" stroke="#fff" stroke-width="1" opacity="0.15">
+                  <rect width="50" height="50" rx="4" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="49" height="49" rx="3.5" fill="none"/>
+                </g>
+                <g id="shopping-bag" transform="translate(16 15)">
+                  <path id="Path" d="M3,0,0,4V18a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V4L15,0Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path-2" data-name="Path" d="M0,.5H18" transform="translate(0 3.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <path id="Path-3" data-name="Path" d="M8,0A4,4,0,0,1,4,4,4,4,0,0,1,0,0" transform="translate(5 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </svg>
+            </li>
+          </ul>
+     
+        </ul>
+      </ul>
+    </nav>
+
+    <section class="hero">
+        <div id="hero1">
+          <h2><span>Service</span><br><b>Range Rover</b></h2>
+          <svg id="Group_3" data-name="Group 3" xmlns="http://www.w3.org/2000/svg" width="100.45" height="27" viewBox="0 0 100.45 27">
+            <rect id="Rectangle" width="100" height="1" transform="translate(0 26)" fill="#fff"/>
+            <text id="Service" transform="translate(0 12)" fill="#fff" font-size="16" font-family="DINNextLTPro-Bold, DIN Next LT Pro" font-weight="700"><tspan x="0" y="0">SERVICE</tspan></text>
+            <path id="Combined_Shape" data-name="Combined Shape" d="M0,7V5H5V0H7V7Z" transform="translate(90.55 6.5) rotate(-45)" fill="#fff"/>
+          </svg>
+        </div>
+        <div id="hero2">
+          <h2><span>Service</span><br><b>Range Rover</b></h2>
+          <svg id="Group_3" data-name="Group 3" xmlns="http://www.w3.org/2000/svg" width="100.45" height="27" viewBox="0 0 100.45 27">
+            <rect id="Rectangle" width="100" height="1" transform="translate(0 26)" fill="#fff"/>
+            <text id="Service" transform="translate(0 12)" fill="#fff" font-size="16" font-family="DINNextLTPro-Bold, DIN Next LT Pro" font-weight="700"><tspan x="0" y="0">SERVICE</tspan></text>
+            <path id="Combined_Shape" data-name="Combined Shape" d="M0,7V5H5V0H7V7Z" transform="translate(90.55 6.5) rotate(-45)" fill="#fff"/>
+          </svg>
+        </div>
+        <div id="hero3">
+          <h2><span>Service</span><br><b>Jaguar</b></h2>
+          <svg id="Group_3" data-name="Group 3" xmlns="http://www.w3.org/2000/svg" width="100.45" height="27" viewBox="0 0 100.45 27">
+            <rect id="Rectangle" width="100" height="1" transform="translate(0 26)" fill="#fff"/>
+            <text id="Service" transform="translate(0 12)" fill="#fff" font-size="16" font-family="DINNextLTPro-Bold, DIN Next LT Pro" font-weight="700"><tspan x="0" y="0">SERVICE</tspan></text>
+            <path id="Combined_Shape" data-name="Combined Shape" d="M0,7V5H5V0H7V7Z" transform="translate(90.55 6.5) rotate(-45)" fill="#fff"/>
+          </svg>
+        </div>
+      </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
